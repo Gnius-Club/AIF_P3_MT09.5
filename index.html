@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM9.5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 9.5 3ro Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Micro:bit & Create A.I.: Aplicar y consolidar la importancia de la cantidad y calidad de datos para el entrenamiento de modelos de IA (gestos). Diagnosticar y "depurar" (arreglar) un modelo de IA que no funciona correctamente.</li>
+                                        <li>GCS: Reutilizar lógica condicional (SI CreateAI RECONOCE...) para probar la mejora del modelo.</li>
+                                        <li>IA (Conceptual): La iteración en el entrenamiento de IA (probar, mejorar, volver a entrenar); la importancia de los datos para la fiabilidad de la IA.</li>
+                                    </ul>
+                                    <strong>Parte de la Currícula de IA cubierta:</strong>
+                                    <ul>
+                                        <li>AIA: ¿Cómo "aprenden" las máquinas de los datos? (Aplicado y Profundizado – énfasis en la resolución de problemas y la fiabilidad).</li>
+                                    </ul>
+                                    <strong>Objetivo General de la Sesión:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes diagnostiquen por qué un modelo de IA (entrenado por ellos o preestablecido por el profesor) no está funcionando correctamente (debido a datos insuficientes o inconsistentes), y luego lo "arreglen" recolectando más y mejores ejemplos, experimentando la mejora en el rendimiento del modelo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Modelo de IA mejorado en Create A.I. para un gesto específico, que demuestre un reconocimiento más fiable después de la depuración.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Acceso a Create A.I. en Micro:bit (<a href="https://createai.microbit.org/" target="_blank">https://createai.microbit.org/</a>).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (ej. MakeCode) y Create A.I.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. Micro:bits).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional el proyecto de ejemplo (Micro:bit mostrando un icono simple) para la demostración en la Actividad 2. PREPARAR MODELO DE IA MAL ENTRENADO.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por la nueva aventura tecnológica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, ingenieros de la IA! 👋 En nuestra última misión, descubrimos que la IA aprende de los datos que le damos, y que la calidad y cantidad importan mucho. ¡Hoy vamos a ser detectives de la IA! Tenemos un pequeño problema que resolver: un Micro:bit que no entiende bien un gesto. ¿Están listos para ser los 'médicos' de la IA y hacerla sentir mejor? Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [videojuegos y dibujar]'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo ya les está respondiendo y está listo para esta aventura. Si alguien no ha recibido respuesta de Xolo, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y el concepto de reacción a la luz con el Micro:bit.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Imagina que tu Micro:bit es como un perrito que intentas enseñar a dar la pata, pero solo le enseñaste una vez y muy rápido. ¡Probablemente no lo haga bien! Hoy, vamos a tener un Micro:bit con una IA que no aprendió bien un gesto. Nuestro desafío será descubrir por qué falla y cómo podemos 'curarlo' o 'arreglarlo' para que reconozca el gesto perfectamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Descripción General ⏰ 2 minutos</h3>
+                            <p>(El profesor muestra SU Micro:bit con SU proyecto de ejemplo ya cargado y funcionando. Esta es una demostración en vivo, no se proyecta diapositiva).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean una de las muchas cosas que podemos hacer hoy, les voy a mostrar un proyecto que yo mismo preparé con un Micro:bit y una IA que no funciona muy bien: (Muestra el Micro:bit con el modelo intencionadamente mal entrenado para un gesto simple, ej. "saludo con la mano", y demuestra cómo falla a menudo o se confunde). ¿Por qué creen que esto no funciona bien? ¿Cómo podríamos mejorarlo? Mi vibe para este proyecto era que (describe tu objetivo, ej: 'reconociera mi saludo'), pero algo anda mal.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Desglose (Sensores) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Así como mi Micro:bit necesita ayuda, ¡ustedes hoy serán sus médicos! Al final de la clase, podrán decir con confianza: <strong>'Yo puedo identificar por qué una IA no reconoce bien un gesto y mejorar su funcionamiento dándole más y mejores ejemplos, utilizando Create A.I. y GCS.'</strong> ¡Vamos a ello!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
+                <p>Los alumnos interactúan con Xolo para entender cómo el Micro:bit "siente" la luz y cómo usar operadores de comparación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo, incluyendo su perfil y los conceptos del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo, nuestro copiloto IA, nos va a explicar por qué a veces las IAs no funcionan bien y cómo podemos "arreglarlas". Para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente comando: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero que me enseñes sobre cómo diagnosticar y mejorar una IA que no aprende bien un gesto'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: AI GYM ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que las IAs aprenden mejor con muchos y buenos ejemplos (datos). Si les damos pocos, o ejemplos confusos, ¡se confunden o no aprenden bien! Su misión será observar cómo falla una IA, diagnosticar por qué y corregir volviendo a Create A.I. para añadir muchos más ejemplos claros y consistentes.</p>
+                                <p class="dialogue assistant">El GCS que usarán para probar el modelo seguirá siendo el mismo, como este ejemplo:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    SI CreateAI RECONOCE "MI_GESTO":
+        mostrar icono PULGAR_ARRIBA
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con: <br>
+                                <strong>* 'Xolo, ¿cuántos ejemplos son "muchos" para que una IA aprenda bien?'</strong><br>
+                                <strong>* '¿Puedes explicarme con una historia sobre [tus gustos/intereses] cómo se 'arregla' una IA?'</strong><br>
+                                <strong>* '¿Qué significa que los ejemplos sean "consistentes"?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Los alumnos diseñan y programan su primer proyecto en Micro:bit: mostrar un icono.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal de la sesión, generando entusiasmo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos a la parte más emocionante de nuestra misión, el Brain Spark. Aquí es donde cada uno de ustedes se convierte en inventor, usando lo que aprendimos para crear su propio proyecto y probarlo en el mundo real con el Micro:bit. El día de hoy trabajarán individualmente pero compartirán el material en parejas, pónganse de acuerdo para que todos prueben su código</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Spark ⏰ 2 minutos</h3>
+                            <p>Anima a los alumnos a pensar en su propio proyecto, basándose en los conceptos del día. El objetivo es la libre exploración de ideas. Mientras Los alumnos piensan en sus ideas propias repartir el material para la sesión si no fue entregado con antelación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Ahora que ya saben que la IA necesita buenos ejemplos, ¡su primera tarea es probar el Micro:bit que tienen! Ya tiene un programa cargado que intenta reconocer un gesto (el profesor les dirá cuál). Su vibe es: "Mi Micro:bit no reconoce bien mi '[nombre del gesto]'. Quiero que al reconocerla, muestre un 'pulgar arriba' (👍), pero falla mucho. ¡Necesito arreglarlo!" Prueben ese gesto varias veces. ¿Funciona bien? ¿Por qué creen que falla? Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo el comando exacto: 'Exploremos ideas juntos para arreglar una IA de gesto'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Spark ⏰ 3 minutos</h3>
+                            <p>Guía a los alumnos sobre cómo comunicar su idea a Xolo para obtener un GCS. Mientras los alumnos escriben y discuten sus ideas con Xolo, reparte un Micro:bit a cada pareja.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya diagnosticaron el problema? ¡Excelente! Ahora, vamos a la parte de "arreglar". Necesitan volver a Create A.I. para el modelo que están depurando y añadir muchos más ejemplos. ¡Recuerden, al menos 15-20 ejemplos claros y consistentes! Grábenlos con cuidado. Luego, entrenen el modelo con estos nuevos datos. El GCS para probar seguirá siendo el mismo que ya tienen, como este:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    SI CreateAI RECONOCE "MI_GESTO":
+        mostrar icono PULGAR_ARRIBA
+    FIN SI
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Brain Spark ⏰ 13 minutos</h3>
+                            <p>Da tiempo a los alumnos para que traduzcan el GCS a bloques en MakeCode, prueben en el simulador y luego en el Micro:bit físico. Recordarles alternar el uso del Micro:bit en la pareja.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Una vez que su modelo de IA en Create A.I. esté entrenado con los nuevos ejemplos, descarguen el modelo actualizado a su Micro:bit. Luego, vuelvan a probar el gesto. ¿Funciona mejor ahora? ¡Comparen el rendimiento! Verán una mejora significativa en el reconocimiento. Recuerden que están trabajando en parejas, así que asegúrense de tomar turnos para probar el Micro:bit. Si el reconocimiento aún no es perfecto, ¡es una oportunidad para seguir depurando! Descríbanle el problema a Xolo para que pueda aprender con ustedes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Brain Spark ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales para los alumnos que terminen antes, basados en la sección 'Mejoras' de la escaleta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya terminaron y su IA funciona de maravilla? ¡Felicidades! Aquí tienen un desafío extra: Si aún falla un poco, ¿qué más podríamos hacer? ¿Añadir más ejemplos? ¿Asegurarnos de que no haya otros gestos en el mismo modelo que puedan confundirlo? ¡Consulten con Xolo cómo podrían mejorar aún más su modelo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos comparten sus iconos, reflexionan sobre el proceso y el concepto de microcontrolador.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble en el Brain Spark. Ahora es el momento de compartir sus inventos en nuestro Gnius STORM. Esta es la parte donde aprendemos unos de otros. La dinámica será simple: primero pensaremos un poco en nuestro propio trabajo, luego lo compartiremos en parejas, y finalmente reflexionaremos todos juntos. ¿Listos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Da a los alumnos un momento corto para la reflexión individual sobre su propio proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Antes de mostrar su proyecto, tómense 30 segundos para pensar en silencio. Miren su creación y reflexionen: <strong>¿Qué fue lo más desafiante de "arreglar" la IA? ¿Fue más fácil o más difícil de lo que esperaban? ¿Están orgullosos del resultado?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, intercambien sus dispositivos y expliquen sus proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Ahora, júntense con un compañero. Por turnos, cada uno va a mostrar su Micro:bit y explicará: <strong>'Mi IA antes no reconocía bien [menciona el gesto], pero ahora, después de [describe la solución, ej: "añadir más ejemplos"], funciona mucho mejor.'</strong> El compañero debe probar el dispositivo y escuchar con atención.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía a los alumnos para que se den retroalimentación mutua, usando plantillas de frases para asegurar que sea constructiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la parte más importante de aprender en equipo: la retroalimentación. Después de probar el proyecto de su compañero, díganle algo positivo y una idea para mejorar. Usen estas frases:<br>
+                                <strong>* 'Lo que más me gustó de tu solución de IA fue...'</strong><br>
+                                <strong>* '¡Qué buena idea [menciona la acción de depuración] para mejorar el reconocimiento!'</strong><br>
+                                <strong>* 'Un consejo para la próxima vez podría ser [sugiere una mejora relacionada con la calidad de los datos]...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10). Cierra la sesión conectando la experiencia práctica con los objetivos de aprendizaje y los conceptos clave del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Felicidades, doctores de la IA! Hoy han demostrado ser verdaderos expertos en hacer que las Inteligencias Artificiales aprendan mejor. Han experimentado cómo las IAs necesitan datos de calidad y en cantidad suficiente para ser fiables y útiles. Las IAs del mundo real, como las que reconocen caras en los teléfonos o entienden la voz, también pasan por este proceso de mejora constante, recibiendo más y mejores datos para ser cada vez más inteligentes y precisas. ¡Su trabajo de hoy es un gran paso para entender la IA en la vida real!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
